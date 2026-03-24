@@ -31,6 +31,7 @@ public class NotificationManager {
     public Notification findById(int id){
         for (int i = 0; i < notifications.size(); i++) {
             if (notifications.get(i).getId() == id){
+                System.out.println(notifications.get(i));
                 return notifications.get(i);
             }
             }

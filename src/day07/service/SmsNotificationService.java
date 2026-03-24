@@ -13,7 +13,7 @@ public class SmsNotificationService implements NotificationService {
         if (text == null || text.isBlank()){
             sent = false;
         }
-        if (text.length() > 70) {
+        if (text.length() > 30) {
             sent = false;
         }
         int id = NotificationIdGenerator.generateId();
